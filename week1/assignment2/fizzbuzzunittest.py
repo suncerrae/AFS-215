@@ -3,7 +3,7 @@ from fizzbuzz import fizzbuzz
 
 class TestFizzBuzz(unittest.TestCase):
     def test_fizz(self):
-        for i in [3, 6, 9, 18]:
+        for i in [2, 4, 6, 8]:
             print('testing', i)
             assert fizzbuzz(i) == 'Fizz'
 
@@ -13,6 +13,6 @@ class TestFizzBuzz(unittest.TestCase):
             assert fizzbuzz(i) == 'Buzz'
 
     def test_fizzbuzz(self):
-        for i in [15, 30, 75]:
+        for i in [15, 30, 85]:
             print('testing', i)
             assert fizzbuzz(i) == 'FizzBuzz'
