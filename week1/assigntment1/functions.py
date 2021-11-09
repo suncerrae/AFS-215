@@ -1,15 +1,12 @@
-import unittest
+def perfectNumber(num):
+    num_sum = 0
+    
+    for r in range(1, num):
+        if num % r == 0:
+            num_sum += r
 
-class Test_PerfectNumber(unittest.TestCase):
+    return num_sum == num
 
-    def perfect_number(self):
-        sum = 0
-        for x in range(1, self):
-            if self % x == 0:
-                sum += x
-        return sum == self
-
-    print(perfect_number(6))
-
-if __name__ == '__main__':
-    unittest.main()
+print(perfectNumber(6))
+print(perfectNumber(10))
+print(perfectNumber(28))
